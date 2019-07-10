@@ -1,0 +1,53 @@
+body
+{
+	background-color: black;
+}
+
+h1
+{
+	font-size:70px;
+	color: white;
+	font-family:"cooper black";
+	text-align: center;
+	margin-top: 100px;
+
+}
+.images
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+	grid-row-gap: 30px;
+	grid-column-gap: 30px;
+	margin-left: 30px;
+	box-shadow: 0px 8px 16px 0px rgba(1,1,1,1);
+	margin-right: 50px;
+}
+.images img
+{
+   align-content: center;
+   width:400px;
+   height: 300px;
+}
+
+@media screen and (max-width: 700px)
+{
+	h1
+	{
+		font-size: 50px;
+	}
+	.images
+	{
+		display:grid;
+		grid-template-columns: auto;
+	}
+	.images img
+	{
+		display: block;
+		align-content: center;
+		width: 400px;
+		height: 300px;
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+}
