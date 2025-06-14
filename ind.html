@@ -15,9 +15,9 @@
   
   <body>
       <div class="slideshow">
-             <img class="mySlides" src="D:\Project\Myfood\New Images\Chocolate.jpg">
-             <img class="mySlides" src="D:\Project\Myfood\New Images\plate-spoon-fruits-461230.jpg">
-             <img class="mySlides" src="D:\Project\Myfood\New Images\the_drink.jpg">
+             <img class="mySlides" src="New Images/Chocolate.jpg">
+             <img class="mySlides" src="New Images/plate-spoon-fruits-461230.jpg">
+             <img class="mySlides" src="New Images/the_drink.jpg">
       </div>
 
       <div id="overlap">
@@ -42,70 +42,72 @@
           <li>Indian</li>
           <li>Italian</li>
           <li>Chinese</li>
-          <li><img src="D:\Project\Myfood\New Images\Feature5-866x487.jpg" align="__center"></li>
-          <li><img src="D:\Project\Myfood\New Images\pasta.jpg" align="__center"></li>
-          <li><img src="D:\Project\Myfood\New Images\Sweet.jpg" align="__center"></li>
+          <li><img src="New Images/Feature5-866x487.jpg" align="__center"></li>
+          <li><img src="New Images/pasta.jpg" align="__center"></li>
+          <li><img src="New Images/Sweet.jpg" align="__center"></li>
         </ul>
       </div>
 
       <div id="aboutus">
         <h2>About Us</h2>
         <ul class="grid2">
-          <li><img src="D:\Project\Myfood\New Images\chef1.jpg"></li>
+          <li><img src="New Images/chef1.jpg"></li>
           <li><p style="text-align: center; padding-top: 100px;">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of cooking new and with best flavours. Therefore, i ensure that this restaurant provides u with all and the best food worldwide. With best shefs and ensured quality ,we try to provide with the best service and environment. For all the food lovers this will increase there craving and for the rest...they would start to feel the same. I hope u have fun visiting this site</p>
           </li>
         </ul>
       </div>
 
       <footer>
-      <div class="container_wrapper">
-        <div id="footer__site_description">
-          <h1 class="logo-container __center">
-            <div class="food">food</div>
-            <div class="paradise">paradise</div>
-          </h1>
-          <h3>for the love of food</h3>
-          <p>
-            Would you like to know about our cuisine?
-            Let us know
-          </p>
+        <div class="container_wrapper">
+          <div id="footer__site_description">
+            <h1 class="logo-container __center">
+              <div class="food">food</div>
+              <div class="paradise">paradise</div>
+            </h1>
+            <h3>for the love of food</h3>
+            <p>
+              Would you like to know about our cuisine?
+              Let us know
+            </p>
+          </div>
+          <div id="footer__social_media">
+            <h3 id="contactus">Social Media</h3>
+            <ul>
+              <li><a href="#"><i class="fa fa-instagram"></i>@foodParadise</a></li>
+              <li><a href="#"><i class="fa fa-facebook-square"></i>@officialfoodlove</a></li>
+              <li><a href="#"><i class="fa fa-envelope"></i>foodparadise@love.in</a></li>
+            </ul>
+          </div>
+          <div id="footer__pages">
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="#">Your experience</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="#">Contributors</a></li>
+              <li><a href="#">Join Us</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
         </div>
-        <div id="footer__social_media">
-          <h3 id="contactus">Social Media</h3>
-          <ul>
-            <li><a href="#"><i class="fa fa-instagram"></i>@foodParadise</a></li>
-            <li><a href="#"><i class="fa fa-facebook-square"></i>@officialfoodlove</a></li>
-            <li><a href="#"><i class="fa fa-envelope"></i>foodparadise@love.in</a></li>
-          </ul>
-        </div>
-        <div id="footer__pages">
-          <h3>Pages</h3>
-          <ul>
-            <li><a href="#">Your experience</a></li>
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Contributors</a></li>
-            <li><a href="#">Join Us</a></li>
-            <li><a href="#">Login</a></li>
-          </ul>
-        </div>
-      </div>
     </footer>
   
-<script>
-var myIndex = 0;
-carousel();
+  <script>
+    var myIndex = 0;
+    carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
 </body>
 </html>
